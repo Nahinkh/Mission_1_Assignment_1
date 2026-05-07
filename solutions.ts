@@ -11,3 +11,14 @@ const reverseString = (str: string): string => {
     return str.split('').reverse().join('');
 }
 const reversed = reverseString("typescript");
+
+
+// Solutions of problems 3:
+type StringOrNumber = string | number;
+const checkType = (val:StringOrNumber):StringOrNumber => {
+    if (typeof val === 'string') {
+        return "String";
+    } else {
+        return "Number";
+    }
+}
