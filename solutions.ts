@@ -5,6 +5,7 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
 
 const evenNumbers = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
+
 // Solutions of problems 2:
 const reverseString = (str: string): string => {
     return str.split('').reverse().join('');
