@@ -9,7 +9,7 @@ Generics allow to capture the type of the argument provided by the user. This en
 ## The "Identity" Example
 Without generics, a function that returns what it receives might look like this:
 ```ts
- function identity(arg: any): any {
+ const identity=(arg: any): any=> {
   return arg;
 }
 ```
@@ -18,7 +18,7 @@ Using any is "generic" in the sense that it accepts anything, but lose the infor
 
 With **Generics**, Use a type variable (usually <T>):
 ```ts
-function identity<T>(arg: T): T {
+const identity =<T>(arg: T): T => {
   return arg;
 }
 const output = identity("Hello World");
@@ -40,7 +40,7 @@ interface HasId {
   id: number;
 }
 
-function printId<T extends HasId>(item: T): void {
+const printId = <T extends HasId>(item: T)=>{
   console.log(item.id);
 }
 ```
@@ -50,4 +50,4 @@ This combines flexibility with structure and safety.
 ## Conclusion
 Generics are one of the most important features in TypeScript for building scalable and maintainable applications. They allow developers to create reusable logic without compromising strict type safety.
 As projects grow larger and more complex, generics become essential for reducing duplication, improving consistency, and maintaining clean code across an entire codebase.
-Mastering generics is not just about writing cleaner code — it is about building software systems that remain reliable, flexible, and scalable over time.
+Mastering generics is not just about writing cleaner code it is about building software systems that remain reliable, flexible, and scalable over time.
